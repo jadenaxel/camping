@@ -1,0 +1,50 @@
+@function pxtoem($px) {
+    @return calc(($px / 16) * 1em);
+}
+
+@mixin break($pixel, $size: 'min') {
+    @if $pixel == 1 {
+        @media (min-width: 640px) {
+            @content;
+        }
+    }
+
+    @else if $pixel == 2 {
+        @media (min-width: 768px) {
+            @content;
+        }
+    }
+
+    @else if $pixel == 3 {
+        @media (min-width: 1024px) {
+            @content;
+        }
+    }
+
+    @else {
+        @media (#{$size}-width: $pixel) {
+            @content;
+        }
+    }
+}
+
+@mixin same($px){
+    width: $px;
+    height: $px;
+}
+
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+body{
+    background-color: #faf4f2;
+}

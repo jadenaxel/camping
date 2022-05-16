@@ -1,0 +1,250 @@
+@import "./main.scss";
+
+.page{
+    &-header{
+        background: url("../../assets/headerBackground.png") no-repeat center;
+        backdrop-filter: brightness(0.5);
+        height: 100vh;
+        border-bottom-left-radius: 190px;
+        border-bottom-right-radius: 190px;
+        @include break(1150px){
+            height: auto;
+        }
+        &--navigation-container{
+            display: flex;
+            padding-top: 60px;
+            justify-content: space-between;
+            margin-bottom: 103px;
+            align-items: center;
+            @include break(1150px){
+                margin-bottom: 238px;
+            }
+            &-logoandmenu{
+                display: flex;
+                align-items: center;
+                &-logo{
+                    margin-right: 49px;
+                }
+                &--menu-container{
+                    &-item{
+                        &--list{
+                            display: flex;
+                            align-items: center;
+                            &-item{
+                                display: none;
+                                @include break(1150px){
+                                    display: block;
+                                    list-style: none;
+                                    margin-right: 30px;
+                                }
+                                a{
+                                    text-decoration: none;
+                                    color: #d2d2d2;
+                                    font-size: pxtoem(18);
+                                    font-family: Roboto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            &-burgerMenu{
+                cursor: pointer;
+                @include break(1150px){
+                    display: none;
+                }
+            }
+            &-login{
+                display: none;
+                @include break(1150px){
+                    display: block;
+                }
+                &--signUp, &--signIn{
+                    background-color: transparent;
+                    color: white;
+                    width: 130px;
+                    height: 50px;
+                    cursor: pointer;
+                    border: none;
+                }
+                &--signIn{
+                    border: 1px solid white;
+                    border-radius: 25px;
+                    margin-left: 10px;
+                }
+            }
+        }
+        &--titleSection-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            &-title{
+                font-size: pxtoem(45);
+                color: white;
+                max-width: 580px;
+                width: 100%;
+                text-align: center;
+                font-family: Archivo;
+                margin-bottom: 30px;
+                @include break(1150px){
+                    font-size: pxtoem(79);
+                }
+            }
+            &-description{
+                font-size: pxtoem(18);
+                max-width: 526px;
+                width: 100%;
+                text-align: center;
+                color: white;
+                font-family: Roboto;
+                margin-bottom: 30px;
+            }
+            &-button{
+                width: 205px;
+                height: 50px;
+                border-radius: 25px;
+                background-color: #e76f51;
+                border: none;
+                color: white;
+                font-size: pxtoem(18);
+                font-family: Roboto;
+                cursor: pointer;
+                font-weight: 300;
+                @include break(1150px){
+                    margin-bottom: 360px;
+                }
+            }
+        }
+    }
+    &-activity{
+        margin-bottom: 150px;
+        &-container{
+            display: grid;
+            gap: 30px;
+            grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+            position: relative;
+            top: -100px;
+            .activity-container{
+                height: 312px;
+                background-color: white;
+                border-radius: 20px;
+                padding: 60px 40px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &-image{
+                    margin-bottom: 20px;
+                    img{
+                        @include same(70px);
+                    }
+                }
+                &-content{
+                    &-title{
+                        text-align: center;
+                        font-size: pxtoem(18);
+                        font-family: Archivo;
+                        margin-bottom: 10px;
+                    }
+                    &-description{
+                        text-align: center;
+                        font-family: Roboto;
+                        max-width: 277px;
+                        width: 100%;
+                    }
+                }
+            }
+            
+        }
+    }
+    &-destinations{
+        &-container{
+            &--logo{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 40px;
+            }
+            &--title{
+                font-size: pxtoem(40);
+                font-family: Archivo;
+                max-width: 456px;
+                width: 100%;
+                text-align: center;
+                margin: 0 auto 60px
+            }
+            &--destinations{
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(257px, 1fr));
+                gap: 20px;
+                .destinations-container{
+                    background-color: white;
+                    border-radius: 20px;
+                    padding: 40px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    &-image{
+                        height: 180px;
+                        width: 100%;
+                        background: no-repeat center / 100%;
+                        border-radius: 20px;
+                        position: relative;
+                        &-heart{
+                            @include same(40px);
+                            background-color: white;
+                            border-radius: 14px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            position: absolute;
+                            right: 11px;
+                            top: 35px;
+                            cursor: pointer;
+                        }
+                    }
+                    &-princing{
+                        background-color: white;
+                        width: 145px;
+                        height: 50px;
+                        margin: -50px auto 0;
+                        border-radius: 14px;
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        margin-bottom: 20px;
+                        p{
+                            color: #e76f51;
+                            font-family: Roboto;
+                        }
+                    }
+                    &-title{
+                        text-align: center;
+                        font-size: pxtoem(18);
+                        font-family: Archivo;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+                    &-description{
+                        text-align: center;
+                        font-size: pxtoem(14);
+                        font-family: Roboto;
+                        margin-bottom: 25px;
+                    }
+                    &-readMore{
+                        border-radius: 25px;
+                        background-color: #f3f3f3;
+                        border: none;
+                        width: 185px;
+                        height: 50px;
+                        text-align: center;
+                        color: black;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
