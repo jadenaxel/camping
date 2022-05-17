@@ -208,7 +208,7 @@
                         background-color: white;
                         width: 145px;
                         height: 50px;
-                        margin: -50px auto 0;
+                        margin: -40px auto 0;
                         border-radius: 14px;
                         position: relative;
                         display: flex;
@@ -243,6 +243,192 @@
                         color: black;
                         cursor: pointer;
                     }
+                }
+            }
+            &--viewMore{
+                width: 205px;
+                height: 50px;
+                color: #e76f51;
+                border: 1px solid #e76f51;
+                border-radius: 25px;
+                font-size: pxtoem(18);
+                font-family: Roboto;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 60px auto 150px;
+            }
+        }
+    }
+    &-letter{
+        margin-bottom: 180px;
+        &-container{
+            background: url("../../assets/campingTouch.png") no-repeat;
+            background-position: center;
+            background-size: auto;
+            border-radius: 20px;
+            @include break(1150px){
+                background-size: 105%;
+            }
+            &-parts{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                flex-direction: column;
+                padding: 83px 99px;
+                @include break(1150px){
+                    flex-direction: row;
+                }
+                &--touch{
+                    order: 2;
+                    @include break(1150px){
+                        order: 1;
+                    }
+                    &-title{
+                        font-size: pxtoem(35);
+                        font-family: Archivo;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        @include break(1150px){
+                            text-align: left;
+                        }
+                    }
+                    &-description{
+                        font-family: Roboto;
+                        font-size: pxtoem(18);
+                        font-weight: 300;
+                        max-width: 486px;
+                        width: 100%;
+                        margin-bottom: 30px;
+                        text-align: center;
+                        @include break(1150px) {
+                            text-align: left;
+                        }
+                    }
+                    &-input{
+                        max-width: 516px;
+                        width: 100%;
+                        height: 80px;
+                        display: flex;
+                        align-items: center;
+                        background-color: #ffffff;
+                        border-radius: 20px;
+                        & > img{
+                            margin: 0 10px 0 30px;
+                        }
+                        input{
+                            width: 100%;
+                            height: 40px;
+                            border: none;
+                            &:focus{
+                                outline: none;
+                            }
+                        }
+                        &--send{
+                            background-color: #e76f51;
+                            margin-right: 15px;
+                            width: 70px;
+                            height: 40px;
+                            border-radius: 20px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            cursor: pointer;
+                        }
+                    }
+                }
+                &--svg{
+                    order: 1;
+                    @include break(1150px) {
+                        order: 2;
+                    }
+                    img{
+                        max-width: 372px;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+    &-footer{
+        background-color: #f8e1db;
+        border-top-left-radius: 150px;
+        border-top-right-radius: 150px;
+        padding-top: 103px;
+        &-container{
+            &--section-1{
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: center;
+                gap: 30px;
+                margin-bottom: 40px;
+                @include break(1150px){
+                    justify-items: auto;
+                    grid-template-columns: 2fr 1fr 1fr 1fr;
+                }
+                &--hipcamp{
+                    &-title{
+                        font-family: Archivo;
+                        font-size: pxtoem(18);
+                        width: 100%;
+                        margin-bottom: 20px;
+                        text-align: center;
+                        @include break(1150px){
+                            max-width: 419px;
+                            text-align: left;
+                        }
+                    }
+                    &-description{
+                        width: 100%;
+                        font-family: Roboto;
+                        font-size: pxtoem(16);
+                        text-align: center;
+                        @include break(1150px) {
+                            max-width: 515px;
+                            text-align: left;
+                        }
+                    }
+                }
+                &--know, &--withUs, &--help{
+                    &--title{
+                        font-family: Archivo;
+                        font-size: pxtoem(18);
+                        margin-bottom: 20px;
+                        text-align: center;
+                        @include break(1150px) {
+                            text-align: left;
+                        }
+                    }
+                    &--list{
+                        list-style: none;
+                        &-item{
+                            font-family: Roboto;
+                            font-size: pxtoem(16);
+                            margin-bottom: 10px;
+                            text-align: center;
+                            @include break(1150px) {
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+            &--section-2{
+                margin-bottom: 60px;
+                text-align: center;
+                @include break(1150px){
+                    text-align: left;
+                }
+                img{
+                    width: 260px;
+                }
+            }
+            &--section-3{
+                padding-bottom: 60px;
+                p{
+                    font-family: Roboto;
+                    font-size: pxtoem(16);
+                    text-align: center;
                 }
             }
         }

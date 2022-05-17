@@ -170,9 +170,143 @@ const App: FC = (): JSX.Element => {
                                 return <Destination item={item} />;
                             })}
                         </div>
+                        <div className="page-destinations-container--viewMore">
+                            View All
+                        </div>
                     </div>
                 </div>
             </div>
+            <div className="page-letter">
+                <div className="container">
+                    <div className="page-letter-container">
+                        <div className="page-letter-container-parts">
+                            <div className="page-letter-container-parts--touch">
+                                <p className="page-letter-container-parts--touch-title">
+                                    Let's Stay in Touch
+                                </p>
+                                <p className="page-letter-container-parts--touch-description">
+                                    Get travel planning ideas, helpful tips, and
+                                    stories from our visitors delivered right to
+                                    your inbox.
+                                </p>
+                                <div className="page-letter-container-parts--touch-input">
+                                    <img
+                                        src="../assets/email.png"
+                                        alt="Email Icon"
+                                    />
+                                    <input
+                                        type="email"
+                                        placeholder="Email Address"
+                                    />
+                                    <div className="page-letter-container-parts--touch-input--send">
+                                        <img
+                                            src="../assets/send.png"
+                                            alt="Send Icon"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="page-letter-container-parts--svg">
+                                <img
+                                    src="../assets/campingSVG.png"
+                                    alt="Camping SVG Image"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer className="page-footer">
+                <div className="container">
+                    <div className="page-footer-container">
+                        <div className="page-footer-container--section-1">
+                            <div className="page-footer-container--section-1--hipcamp">
+                                <p className="page-footer-container--section-1--hipcamp-title">
+                                    Hipcamp is everywhere you want to camp.
+                                </p>
+                                <p className="page-footer-container--section-1--hipcamp-description">
+                                    Discover unique experiences on ranches,
+                                    nature preserves, farms, vineyards, and
+                                    public campgrounds across the U.S. Book tent
+                                    camping, treehouses, cabins, yurts,
+                                    primitive backcountry sites, car camping,
+                                    airstreams, tiny houses, RV camping,
+                                    glamping tents and more.
+                                </p>
+                            </div>
+                            <div className="page-footer-container--section-1--know">
+                                <p className="page-footer-container--section-1--know--title">
+                                    Get to Know Us
+                                </p>
+                                <ul className="page-footer-container--section-1--know--list">
+                                    <li className="page-footer-container--section-1--know--list-item">
+                                        About Us
+                                    </li>
+                                    <li className="page-footer-container--section-1--know--list-item">
+                                        Rules & Reservation Policies
+                                    </li>
+                                    <li className="page-footer-container--section-1--know--list-item">
+                                        Accessibility
+                                    </li>
+                                    <li className="page-footer-container--section-1--know--list-item">
+                                        Media Center
+                                    </li>
+                                    <li className="page-footer-container--section-1--know--list-item">
+                                        Site Map
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="page-footer-container--section-1--withUs">
+                                <p className="page-footer-container--section-1--withUs--title">
+                                    Plan with Us
+                                </p>
+                                <ul className="page-footer-container--section-1--withUs--list">
+                                    <li className="page-footer-container--section-1--withUs--list-item">
+                                        Find Trip Inspiration
+                                    </li>
+                                    <li className="page-footer-container--section-1--withUs--list-item">
+                                        Build a Trip
+                                    </li>
+                                    <li className="page-footer-container--section-1--withUs--list-item">
+                                        Buy a Pass
+                                    </li>
+                                    <li className="page-footer-container--section-1--withUs--list-item">
+                                        Enter a Lottery
+                                    </li>
+                                </ul>
+                            </div>
+                            <div className="page-footer-container--section-1--help">
+                                <p className="page-footer-container--section-1--help--title">
+                                    Let Us Help You
+                                </p>
+                                <ul className="page-footer-container--section-1--help--list">
+                                    <li className="page-footer-container--section-1--help--list-item">
+                                        Your Account
+                                    </li>
+                                    <li className="page-footer-container--section-1--help--list-item">
+                                        Your Reservations
+                                    </li>
+                                    <li className="page-footer-container--section-1--help--list-item">
+                                        Contact Us
+                                    </li>
+                                    <li className="page-footer-container--section-1--help--list-item">
+                                        Help Center
+                                    </li>
+                                    <li className="page-footer-container--section-1--help--list-item">
+                                        Submit Feedback
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div className="page-footer-container--section-2">
+                            <img src="../assets/download.png" alt="Download" />
+                        </div>
+                        <div className="page-footer-container--section-3">
+                            <p>© 2020. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
     );
 };
