@@ -6,11 +6,11 @@ const Destination: FC<any> = ({ item }: any): JSX.Element => {
             <div
                 className="destinations-container-image"
                 style={{
-                    backgroundImage: `url("../assets/destination/${item.image}")`,
+                    backgroundImage: `url("../images/destination/${item.image}")`,
                 }}
             >
                 <div className="destinations-container-image-heart">
-                    <img src="../assets/heart.png" alt="Heart" />
+                    <img src="../images/heart.png" alt="Heart" />
                 </div>
             </div>
             <div className="destinations-container-princing">

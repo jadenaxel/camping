@@ -18,23 +18,23 @@ const MenuNames: string[] = [
 
 const activity: Object[] = [
     {
-        image: "../assets/activity/bonfire.png",
+        image: "../images/activity/bonfire.png",
         title: "Camping & Day Use",
         description:
             "Return to your favorite spot or discover a new one that’s right for you.",
     },
     {
-        image: "../assets/activity/tickets.png",
+        image: "../images/activity/tickets.png",
         title: "Tickets",
         description: "Reserve tours and tickets to participate in events.",
     },
     {
-        image: "../assets/activity/card.png",
+        image: "../images/activity/card.png",
         title: "Permits",
         description: "Obtain permits for access to high-demand locations.",
     },
     {
-        image: "../assets/activity/fishing.png",
+        image: "../images/activity/fishing.png",
         title: "Recreation Activities",
         description:
             "Find the best spots for hunting, fishing & recreational shooting.",
@@ -100,7 +100,7 @@ const App: FC = (): JSX.Element => {
                     <div className="page-header--navigation-container">
                         <div className="page-header--navigation-container-logoandmenu">
                             <div className="page-header--navigation-container-logoandmenu-logo">
-                                <img src="../assets/logo.png" alt="Logo" />
+                                <img src="../images/logo.png" alt="Logo" />
                             </div>
                             <div className="page-header--navigation-container-logoandmenu--menu-container">
                                 <nav className="page-header--navigation-container-logoandmenu--menu-container-item">
@@ -122,7 +122,7 @@ const App: FC = (): JSX.Element => {
                             </div>
                         </div>
                         <div className="page-header--navigation-container-burgerMenu">
-                            <img src="../assets/menu.png" alt="Burger Menu" />
+                            <img src="../images/menu.png" alt="Burger Menu" />
                         </div>
                         <div className="page-header--navigation-container-login">
                             <button className="page-header--navigation-container-login--signUp">
@@ -160,7 +160,7 @@ const App: FC = (): JSX.Element => {
                 <div className="container">
                     <div className="page-destinations-container">
                         <div className="page-destinations-container--logo">
-                            <img src="../assets/map.png" alt="" />
+                            <img src="../images/map.png" alt="" />
                         </div>
                         <p className="page-destinations-container--title">
                             Explore Destinations & Activities
@@ -191,7 +191,7 @@ const App: FC = (): JSX.Element => {
                                 </p>
                                 <div className="page-letter-container-parts--touch-input">
                                     <img
-                                        src="../assets/email.png"
+                                        src="../images/email.png"
                                         alt="Email Icon"
                                     />
                                     <input
@@ -200,7 +200,7 @@ const App: FC = (): JSX.Element => {
                                     />
                                     <div className="page-letter-container-parts--touch-input--send">
                                         <img
-                                            src="../assets/send.png"
+                                            src="../images/send.png"
                                             alt="Send Icon"
                                         />
                                     </div>
@@ -208,7 +208,7 @@ const App: FC = (): JSX.Element => {
                             </div>
                             <div className="page-letter-container-parts--svg">
                                 <img
-                                    src="../assets/campingSVG.png"
+                                    src="../images/campingSVG.png"
                                     alt="Camping SVG Image"
                                 />
                             </div>
@@ -299,7 +299,7 @@ const App: FC = (): JSX.Element => {
                             </div>
                         </div>
                         <div className="page-footer-container--section-2">
-                            <img src="../assets/download.png" alt="Download" />
+                            <img src="../images/download.png" alt="Download" />
                         </div>
                         <div className="page-footer-container--section-3">
                             <p>© 2020. All rights reserved.</p>
